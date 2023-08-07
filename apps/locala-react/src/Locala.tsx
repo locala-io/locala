@@ -1,7 +1,4 @@
-/// <reference types="locala" />
-
 import React from "react";
-
 
 export interface LocalaProps {
   key: Locala.LocaleStrings;
