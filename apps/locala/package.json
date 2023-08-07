@@ -1,10 +1,10 @@
 {
   "name": "locala",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Manage your localizations",
   "author": "Jack Allen",
   "bin": {
-    "locala": "./bin/cli"
+    "locala": "./bin/run"
   },
   "homepage": "https://github.com/locala-io/locala/tree/master/apps/locala",
   "license": "MIT",
