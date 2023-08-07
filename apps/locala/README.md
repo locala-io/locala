@@ -18,7 +18,7 @@ $ npm install -g locala
 $ locala COMMAND
 running command...
 $ locala (--version)
-locala/0.11.0 darwin-x64 node-v18.13.0
+locala/0.12.0 darwin-x64 node-v18.13.0
 $ locala --help [COMMAND]
 USAGE
   $ locala COMMAND
@@ -59,7 +59,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/generate/index.ts](https://github.com/locala-io/locala/blob/v0.11.0/dist/commands/generate/index.ts)_
+_See code: [dist/commands/generate/index.ts](https://github.com/locala-io/locala/blob/v0.12.0/dist/commands/generate/index.ts)_
 
 ## `locala help [COMMAND]`
 
