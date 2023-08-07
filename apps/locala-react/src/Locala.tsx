@@ -7,7 +7,9 @@ declare global {
   }
 }
 
-export function Locala(key: Locala.LocaleStrings) {}
+export function Locala(key: Locala.LocaleStrings) {
+  return <>{key}</>
+}
 
 export function locala(key: Locala.LocaleStrings): string {
   return "";
