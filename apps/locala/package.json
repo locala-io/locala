@@ -1,10 +1,10 @@
 {
   "name": "locala",
-  "version": "0.0.0",
+  "version": "0.6.0",
   "description": "Manage your localizations",
   "author": "Jack Allen",
   "bin": {
-    "locala": "./bin/dev"
+    "locala": "./bin/cli"
   },
   "homepage": "https://github.com/locala-io/locala",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.4.7",
+    "handlebars": "^4.7.8",
     "yaml": "^2.3.1"
   },
   "devDependencies": {
@@ -57,8 +58,8 @@
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
+    "posttest": "pnpm lint",
+    "prepack": "pnpm build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },

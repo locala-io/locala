@@ -18,7 +18,7 @@ $ npm install -g locala
 $ locala COMMAND
 running command...
 $ locala (--version)
-locala/0.0.0 darwin-x64 node-v18.13.0
+locala/0.5.0 darwin-x64 node-v18.13.0
 $ locala --help [COMMAND]
 USAGE
   $ locala COMMAND
@@ -27,9 +27,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`locala hello PERSON`](#locala-hello-person)
-* [`locala hello world`](#locala-hello-world)
-* [`locala help [COMMANDS]`](#locala-help-commands)
+* [`locala generate`](#locala-generate)
+* [`locala help [COMMAND]`](#locala-help-command)
 * [`locala plugins`](#locala-plugins)
 * [`locala plugins:install PLUGIN...`](#locala-pluginsinstall-plugin)
 * [`locala plugins:inspect PLUGIN...`](#locala-pluginsinspect-plugin)
@@ -40,67 +39,47 @@ USAGE
 * [`locala plugins:uninstall PLUGIN...`](#locala-pluginsuninstall-plugin-2)
 * [`locala plugins update`](#locala-plugins-update)
 
-## `locala hello PERSON`
+## `locala generate`
 
-Say hello
+Generate local types
 
 ```
 USAGE
-  $ locala hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
+  $ locala generate [-c <value>]
 
 FLAGS
-  -f, --from=<value>  (required) Who is saying hello
+  -c, --config=<value>  [default: locala.yaml] Your local configuration file
 
 DESCRIPTION
-  Say hello
+  Generate local types
 
 EXAMPLES
   $ oex hello friend --from oclif
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/locala-io/locala/blob/v0.0.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/generate/index.ts](https://github.com/locala-io/locala/blob/v0.5.0/dist/commands/generate/index.ts)_
 
-## `locala hello world`
+## `locala help [COMMAND]`
 
-Say hello world
-
-```
-USAGE
-  $ locala hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ locala hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [dist/commands/hello/world.ts](https://github.com/locala-io/locala/blob/v0.0.0/dist/commands/hello/world.ts)_
-
-## `locala help [COMMANDS]`
-
-Display help for locala.
+display help for locala
 
 ```
 USAGE
-  $ locala help [COMMANDS] [-n]
+  $ locala help [COMMAND] [--json] [--all]
 
 ARGUMENTS
-  COMMANDS  Command to show help for.
+  COMMAND  command to show help for
 
 FLAGS
-  -n, --nested-commands  Include all nested commands in the output.
+  --all   see all commands in CLI
+  --json  Format output as json.
 
 DESCRIPTION
-  Display help for locala.
+  display help for locala
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.15/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.0.0/src/commands/help.ts)_
 
 ## `locala plugins`
 

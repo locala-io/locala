@@ -1,8 +1,6 @@
-declare global {
-  namespace Locala {
+declare module locala {
     type Locale = "";
     type LocaleStrings = "";
-  }
 }
 
-export {};
+export { locala };
