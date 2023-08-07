@@ -2,13 +2,17 @@ import React from "react";
 
 declare global {
   namespace Locala {
-    export type Locale = "";
-    export type LocaleStrings = "";
+    type Locale = "";
+    type LocaleStrings = "";
   }
 }
 
-export function Locala(key: Locala.LocaleStrings) {
-  return <>{key}</>
+export interface LocalaProps {
+  key: Locala.LocaleStrings;
+}
+
+export function Locala({ key }: LocalaProps) {
+  return <>{key}</>;
 }
 
 export function locala(key: Locala.LocaleStrings): string {
