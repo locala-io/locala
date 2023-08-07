@@ -6,7 +6,7 @@
   "bin": {
     "locala": "./bin/cli"
   },
-  "homepage": "https://github.com/locala-io/locala",
+  "homepage": "https://github.com/locala-io/locala/tree/master/apps/locala",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": "locala-io/locala",
@@ -49,8 +49,8 @@
     ],
     "topicSeparator": " ",
     "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
+      "generate": {
+        "description": "Generate local types using your locala.yaml file"
       }
     }
   },
@@ -68,7 +68,7 @@
   },
   "bugs": "https://github.com/locala-io/locala/issues",
   "keywords": [
-    "oclif"
+    "locale"
   ],
   "types": "dist/index.d.ts"
 }

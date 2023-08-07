@@ -1,9 +1,9 @@
-oclif-hello-world
+🌍 Locala
 =================
 
-oclif example Hello World CLI
+Manage your localizations
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://locala.io)
 [![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
 [![GitHub license](https://img.shields.io/github/license/oclif/hello-world)](https://github.com/oclif/hello-world/blob/main/LICENSE)
 
@@ -18,7 +18,7 @@ $ npm install -g locala
 $ locala COMMAND
 running command...
 $ locala (--version)
-locala/0.5.0 darwin-x64 node-v18.13.0
+locala/0.6.0 darwin-x64 node-v18.13.0
 $ locala --help [COMMAND]
 USAGE
   $ locala COMMAND
@@ -45,10 +45,11 @@ Generate local types
 
 ```
 USAGE
-  $ locala generate [-c <value>]
+  $ locala generate [-c <value>] [-o <value>]
 
 FLAGS
   -c, --config=<value>  [default: locala.yaml] Your local configuration file
+  -o, --output=<value>  [default: src] Output for locales
 
 DESCRIPTION
   Generate local types
@@ -58,7 +59,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/generate/index.ts](https://github.com/locala-io/locala/blob/v0.5.0/dist/commands/generate/index.ts)_
+_See code: [dist/commands/generate/index.ts](https://github.com/locala-io/locala/blob/v0.6.0/dist/commands/generate/index.ts)_
 
 ## `locala help [COMMAND]`
 
