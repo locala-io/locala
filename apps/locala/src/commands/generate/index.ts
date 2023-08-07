@@ -132,11 +132,11 @@ declare module locala {
     type Locale =
       {{#each locales}}
         | "{{this}}"
-      {{/each}};
+      {{/each}}
     type LocaleStrings =
       {{#each strings}}
         | "{{this}}"
-      {{/each}};
+      {{/each}}
 }
 
 export { locala };`;
