@@ -1,11 +1,7 @@
+/// <reference types="locala" />
+
 import React from "react";
 
-declare global {
-  namespace Locala {
-    type Locale = "";
-    type LocaleStrings = "";
-  }
-}
 
 export interface LocalaProps {
   key: Locala.LocaleStrings;

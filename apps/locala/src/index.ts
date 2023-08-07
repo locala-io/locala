@@ -1,1 +1,8 @@
-export {run} from '@oclif/core'
+declare global {
+  namespace Locala {
+    type Locale = "";
+    type LocaleStrings = "";
+  }
+}
+
+export {};
