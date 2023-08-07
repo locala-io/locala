@@ -2,14 +2,19 @@
   "name": "@locala/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.2.18",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
